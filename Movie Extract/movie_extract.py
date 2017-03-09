@@ -1,9 +1,14 @@
 import regex as re
 from collections import OrderedDict
 
-movies = ['star_wars',
-          'titanic',
-          'empire_strikes_back']
+movies = ['austinpowers',
+          'batman',
+          'blade_runner',
+          'empire_strikes_back',
+          'jerry_maguire',
+          'mybestfriendswedding',
+          'star_wars',
+          'titanic']
 for movie in movies:
     file = open('./input/' + movie + '.txt', 'r')
 
@@ -32,10 +37,13 @@ for movie in movies:
                 characters[scene] = []
 
             elif bool:
-                result2 = re.search('^(?:\s{5}|\s{4})(?:\s|)([A-Z].+)', line)
+                result2 = re.search('^\s+([A-Z]{2}.+)(?<![a-z]+)', line)
                 if result2:
-                    character = re.sub(r'\s{5}', '', result2.group(1))
-                    characters[scene].append(character)
+                    if '!' not in result2.group(1) and ',' not in result2.group(1) and ' ...' not in result2.group(1) \
+                            and ' - ' not in result2.group(1) and ':' not in result2.group(1)\
+                            and len(result2.group(1)) < 35:
+                        character = re.sub(r'^\s+', '', result2.group(1))
+                        characters[scene].append(character)
         if characters[scene]:
             final.append(str(scene_count) + ':\t' + str(scene) + ':\t' + str(characters[scene]))
             scene_count += 1
