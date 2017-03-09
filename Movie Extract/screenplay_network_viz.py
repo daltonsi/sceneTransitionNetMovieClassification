@@ -17,7 +17,10 @@ def sluglines_to_networkObjects(textfile):
         line = line.split('\t')
         line[2] = ast.literal_eval(line[2])
         line[0] = int(line[0])
-        line[1] = line[1].split(' - ')[0]
+        if ' -- ' in line[1]:
+            line[1] = line[1].split(' -- ')[0]
+        if ' - ' in line[1]:
+            line[1] = line[1].split(' - ')[0]
         if "." in line[1]:
             line[1] = line[1].split(". ")[1]
         scene_objects.append(line)
