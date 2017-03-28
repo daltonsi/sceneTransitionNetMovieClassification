@@ -30,12 +30,14 @@ def load_master_file(master_data_file):
 	return master_df
 
 
-#Calculates the pearson coefficient between a genre_column and a Scene Transition Network Metric column
-#  data_file = a pandas dataframe (pandas df)
+# Calculates the pearson coefficient between a genre_column and a Scene Transition Network Metric column
+# NOTE: Compares a single genre column to one OR MORE network metrics
+#  data_file = a csv file
 #  target_column = the column name of the dependent variables (string)
-#  network_metric_columns =
+#  network_metric_columns = list of network metric column headings
 #  output_path =  the intended path and name of the output file (string)
-def calc_correlations(dataframe, genre_column, network_metric_columns, output_path=None):
+def calc_correlations(data_file, genre_column, network_metric_columns, output_path=None):
+    dataframe = load_master_file(data_file)
     target_df = dataframe[genre_column]
 
     correlations = {}
@@ -64,6 +66,5 @@ def calc_correlations(dataframe, genre_column, network_metric_columns, output_pa
 
 
 if __name__ == "__main__":
-    master_df = load_master_file(TEST_DATA)
-    print "Data Loaded"
-    calc_correlations(master_df,'action',['average_shortest_path','clustering_coefficient']),output_path='test_analysis.csv')
+
+    calc_correlations(TEST_DATA,'action',['average_shortest_path','clustering_coefficient'],output_path='test_analysis.csv')
