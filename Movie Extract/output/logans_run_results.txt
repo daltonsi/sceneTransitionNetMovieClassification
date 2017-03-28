@@ -1,0 +1,82 @@
+1:	EXT. - SKY NIGHT:	None
+2:	EXT. - DOME OF GLASS - NIGHT:	None
+3:	EXT. - THE CITY - DAY	:	None
+4:	INT - RESIDENCE PLAZA - THE ELEVATOR	:	None
+5:	EXTREME CLOSE UP - HAND - IN THE WATER - (INSERT)	:	None
+6:	INT. - NURSERY CORRIDOR		:	['LOGAN', 'FRANCIS  (shaking\t', 'LOGAN (still knocking  ', 'FRANCIS               ', 'LOGAN (to infant)   ', 'FRANCIS    ', 'FRANCIS ', 'LOGAN ', 'LOGAN', 'VOICE ', 'LOGAN ', 'VOICE', 'LOGAN (one last look; ', 'VOICE', 'FRANCIS', 'LOGAN ', 'FRANCIS ']
+7:	EXT. - MAZE STATION - NIGHT:	['FRANCIS (peering ', 'LOGAN ', 'FRANCIS (shrugs) ']
+8:	INT. - MAZE-CAR - LOGAN AND FRANCIS:	None
+9:	EXT. - MAZE- CAR:	['LOGAN ', 'FRANCIS ', 'LOGAN (laughs)', 'FRANCIS', 'MAN', 'WOMAN (critically) ', 'MAN ', 'WOMAN ', 'MAN ', 'LOGAN', 'FRANCIS ', 'LOGAN (quickly) ', 'FRANCIS', 'FRANCIS ', 'WOMAN (pleasantly) ', 'WOMAN', 'WOMAN (smiles) ', 'FRANCIS (after a beat; ', 'WOMAN', 'FRANCIS', 'FRANCIS', 'LOGAN', 'LOGAN AND FRANCIS ', 'FRANCIS ', 'LOGAN (laughs ', 'LOGAN ', 'FRANCIS (hustling', 'DANIEL (glances at his', 'FRANCIS', 'LOGAN', 'LOGAN ', 'FRANCIS ', 'CROWD ', 'CROWD ', "CROWD'S CHANT", 'LOGAN AND FRANCIS', "CROWD'S CHANT ", 'LOGAN ', 'LOGAN', 'FRANCIS']
+10:	INTER CUT between Logan and Francis following the running man:	['LOGAN', 'LOGAN ', 'FRANCIS', 'FRANCIS ', 'FRANCIS ']
+11:	EXT.:	['LOGAN', 'JESSICA ', 'LOGAN', 'JESSICA ', 'LOGAN ', 'JESSICA ', 'LOGAN', 'JESSICA', 'LOGAN ', 'JESSICA \t\t', 'LOGAN ', 'JESSICA ', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA ', 'LOGAN', 'JESSICA', 'LOGAN ', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN\t\t\t', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN ', 'JESSICA', 'LOGAN ', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN', 'LOGAN', 'LOGAN \t\t(playfully) ', 'JESSICA (somewhat', 'LOGAN (interrupting;', 'JESSICA', 'LOGAN', 'LOGAN', 'JESSICA ', 'LOGAN (softly)', 'LOGAN \t', 'LOGAN', 'FRANCIS']
+12:	EXT. - SAND MAN H.Q.:	['LOGAN', 'SANDMAN (embarrassed)', 'LOGAN', 'SANDMAN', 'FRANCIS', 'SANDMAN (shrug)', 'LOGAN ']
+13:	INT. - SANDMAN H.Q. LOBBY (VOICE OVER):	['LOGAN', 'FRANCIS ', 'LOGAN ']
+14:	INT. - SANDMAN H.Q. - READY ROOM:	['SANDMAN (Monitor)', 'FRANCIS (touching his']
+15:	INT. - SANDMAN H.Q. - DEBRIEFING AREA:	['IDENTIFY', 'CLEAR', 'FRANCIS-7', 'FRANCIS', 'PROBABILITY', 'APPROACH', 'IDENTIFY', 'LOGAN', 'PREMILLENNIAL SYMBOL.', 'LOGAN', 'PLACE OF IMMUNITY.', 'LOGAN', 'RELATED TO UNACCOUNTED ', 'LOGAN', 'HOLD', 'OBJECT ANKH ASSOCIATED ', 'RUNNER GOAL.', 'LOGAN ', 'CORRECT', 'LOGAN', 'NEGATIVE...UNACCOUNTED', 'CITIZENS 1056...', 'LOGAN ', 'ZERO', 'LOGAN', 'UNACCOUNTED CITIZENS', 'NUMBER 1056....LOGAN-', 'LOGAN ', 'AUTHORIZATION TO\t', 'PENETRATE CITY SEALS...', 'LOGAN (startled)', 'SANCTUARY DESTRUCT...', 'FIND\t\t', 'DESTROY', 'LOGAN', 'ASSIGNMENT SECRET.', 'LOGAN', 'LOGAN', 'LIFECLOCK--ALTER', 'LOGAN', 'LOGAN', 'LIFECLOCK-ALTER', 'LOGAN (standing)', 'TAKE OBJECT WITH YOU', 'LOGAN (very urgent) ', 'CLEAR LOGAN-5']
+16:	INT. - HYDROTONER - DAY	:	['FRANCIS', 'LOGAN ', 'FRANCIS ', 'LOGAN ', 'FRANCIS ', 'LOGAN ', 'FRANCIS ', 'LOGAN ', 'FRANCIS ']
+17:	EXT. - SANDMAN BUILDING	:	['LOGAN ']
+18:	INT. - LOGAN'S APARTMENT	:	['YOUNG SANDMAN (smiling)', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA ', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN\t', 'JESSICA\t', 'JESSICA\t', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA (after', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA', 'JESSICA', 'LOGAN', 'JESSICA \t', 'LOGAN', 'JESSICA', 'LOGAN (a beat)', 'JESSICA', 'LOGAN ', 'JESSICA', 'LOGAN (putting the', 'LOGAN']
+19:	EXT. - A SLEEK, OUTDOOR RESTAURANT - NIGHT:	None
+20:	EXT. - RESTAURANT - FULL ANGLE - THE THREE MEN,:	['WOMAN AND JESSICA', 'SECOND MAN ', 'FIRST MAN', 'THIRD MAN', 'WOMAN', 'JESSICA', 'WOMAN ', 'FRANCIS (taking his']
+21:	EXT - RESTAURANT - THREE MEN A WOMAN AND JESSICA:	['SECOND MAN (urgently)\t', 'JESSICA\t', 'JESSICA', 'MAN', 'WOMAN (cutting in)', 'THIRD MAN', 'JESSICA (stalling)', 'WOMAN', 'WOMAN  ', 'SECOND MAN ', 'LOGAN', 'JESSICA', 'JESSICA', 'LOGAN', 'JESSICA ', 'LOGAN ', 'JESSICA ', 'LOGAN', 'JESSICA', 'LOGAN (overriding)', 'JESSICA (evading it)', 'LOGAN ', 'LOGAN', 'JESSICA', 'LOGAN (a beat)', 'JESSICA (touching his', 'LOGAN (knowing she is']
+22:	INT - MAZE-CAR - LOGAN AND JESSICA - MOVING SHOT:	['LOGAN', 'LOGAN', 'JESSICA\t\t', 'JESSICA ', 'LOGAN ', 'JESSICA ', 'LOGAN ', 'JESSICA ', 'LOGAN ', 'JESSICA ', 'LOGAN (smiling)', 'VOICE\t\t\t']
+23:	EXT. - MAZE-CAR - CATHEDRAL STATION	:	['JESSICA']
+24:	EXT. - MAZE-CAR M PLATFORM - CATHEDRAL:	['LOGAN ', 'LOGAN']
+25:	INT. - WALL - DAZZLE CHAMBER:	['LOGAN (guiding her) ', 'JESSICA (doing her', 'LOGAN (as they enter\t', 'JESSICA', 'LOGAN', 'JESSICA (gently)', 'JESSICA', 'MARY', 'JESSICA', 'MARY', 'JESSICA\t\t\t', 'MARY', 'JESSICA', 'MARY', 'LOGAN ']
+26:	EXT. - CATHEDRAL ITSELF:	['LOGAN', 'BILLY ', 'LOGAN\t\t', 'BILLY', 'LOGAN (firm tone)', 'BILLY', 'LOGAN', 'LOGAN ', 'BILLY (lashing out) ', 'LOGAN ', 'BILLY', 'ANOTHER VOICE\t', 'ANOTHER VOICE', 'BILLY (chilling laugh) ', 'BILLY\t\t', 'LOGAN ', 'LOGAN', 'LOGAN', 'LOGAN ', 'WOMAN (nearing', 'LOGAN (quietly)', 'WOMAN', 'LOGAN (breathing hard) ', 'LOGAN ', 'LOGAN\t']
+27:	EXT. - THE OTHER SIDE OF THE ABANDONED BUILDING - :	['FRANCIS (quietly)', 'SECOND MAN']
+28:	INT. - MAZE-CAR - LOGAN AND JESSICA - MOVING SHOT 	:	['JESSICA', 'LOGAN', 'JESSICA ', 'LOGAN (a beat) ', 'JESSICA (interrupting) ', 'LOGAN (wry laugh) ', 'JESSICA (torn) ', 'LOGAN', 'JESSICA ', 'LOGAN']
+29:	INT. - SANDMAN READY ROOM - FRANCIS:	['IDENTIFY\t', 'REJECT', 'SANDMAN', 'FRANCIS', 'SANDMAN ', 'FRANCIS (starting out) ']
+30:	EXT. - NEW YOU #483 - TWO SHOT - LOGAN AND JESSICA	:	None
+31:	INT. - NEW YOU #483:	['RECEPTIONIST ', 'LOGAN ', 'RECEPTIONIST ', 'RECEPTIONIST\t', 'LOGAN (brusquely) ', 'RECEPTIONIST (smiling) ', 'LOGAN', 'RECEPTIONIST', 'LOGAN', 'HOLLY', 'WOMAN CUSTOMER ', 'LOGAN (looking) ', 'WOMAN CUSTOMER ', 'LOGAN\t', 'HOLLY', 'DOC', 'LOGAN', 'DOC (showing his palm;', 'LOGAN', 'DOC (with pride)', 'DOC', 'LOGAN ', 'DOC ', 'DOC ', 'HOLLY', 'LOGAN  ', 'HOLLY ', 'DOC\t', 'JESSICA;', 'DOC', 'JESSICA', 'DOC', 'HOLLY', "DOC'S VOICE\t\t", 'HOLLY', 'DOC ', 'DOC', 'LOGAN', 'DOC (smiling) ', 'HOLLY (whispering) ', 'LOGAN', 'DOC', 'DOC ', 'DOC', 'DOC', 'DOC ', 'DOC\t\t\t', 'DOC', 'HOLLY', 'DOC', 'LOGAN']
+32:	INTERCUT: CLOSE ANGLES - THE CLUSTER ABOVE LOGAN :	['LOGAN (out-of-breath)', 'FRANCIS (frowning)', 'LOGAN', 'FRANCIS ', 'JESSICA']
+33:	EXT. - HALLUCIMILL - TWO SHOT - LOGAN AND JESSICA:	None
+34:	INT. - LOVE SHOP - LOGAN AND JESSICA:	['WANTON']
+35:	INTERCUT SHOTS of the suddenly-illuminated tableaus. Sex, manifold:	None
+36:	INT. - AN IMMENSE METAL STAIRWAY	:	['LOGAN', 'JESSICA ', 'LOGAN', 'JESSICA ', 'LOGAN', 'JESSICA (hopelessly) ', 'LOGAN\t', 'JESSICA', 'LOGAN (interrupting)', 'JESSICA ', 'JESSICA ', 'JESSICA (softly) ', 'LOGAN (whispering) ', 'JESSICA (whispering)\t']
+37:	INT. - SANDMAN H.Q. READY ROOM:	['VOICE']
+38:	INT. - SANCTUARY HQ. - LOGAN, JESSICA - CLOSE	:	['LOGAN ', 'VOICE', 'LOGAN\t', 'JESSICA (shouting) ', 'HOLLY ', 'VOICE (gentle)', 'HOLLY (hysteria)\t', 'HOLLY\t', 'JESSICA', 'HOLLY (suddenly', 'JESSICA', 'HOLLY (pouring ', 'JESSICA (coaching', 'HOLLY (remembers)', 'LOGAN ', 'VOICE', 'VOICE ', 'LOGAN', 'VOICE ', 'LOGAN', 'VOICE ', 'LOGAN ', 'JESSICA', 'VOICE1', 'JESSICA (small voice) ', "JESSICA (cont'd)", 'LOGAN', 'LOGAN', 'FRANCIS ', 'VOICE\t', 'JESSICA (breathlessly) ', 'LOGAN ', 'JESSICA', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN (alert)\t', 'JESSICA', 'FRANCIS (distorted;', 'LOGAN N N N.']
+39:	INT. - THE SHAFT 	:	None
+40:	INT. - SHAFT - TWO SHOT - LOGAN AND JESSICA :	['JESSICA (whispering) ', 'LOGAN\t', 'JESSICA ', "JESSICA (cont'd)\t", 'LOGAN ', 'JESSICA ', 'LOGAN ', 'JESSICA (feelingly) ', 'LOGAN', 'JESSICA ', 'LOGAN ', 'JESSICA ']
+41:	INT. - ICE CAVERN:	['VOICE', 'BOX\t\t', 'LOGAN', 'BOX (laughs)', 'JESSICA', 'BOX\t', 'LOGAN (after a beat)', 'BOX', 'JESSICA (quietly)', 'BOX (still laughing) ', 'LOGAN', 'LOGAN (angrily) ', 'BOX', 'LOGAN (beginning ', 'BOX ', 'LOGAN\t', 'BOX (mischievously)', 'LOGAN', 'BOX ', 'LOGAN ', 'BOX', 'LOGAN', 'BOX', 'JESSICA ', 'BOX ', 'LOGAN (exasperated) ', 'BOX ', 'LOGAN (to Jessica)\t', 'BOX (interrupting;', 'LOGAN', 'BOX', 'LOGAN (starting to ', 'BOX', 'LOGAN', 'BOX (beat)', 'BOX', "BOX'S VOICE\t", 'BOX (stepping back) ', "BOX'S VOICE", 'JESSICA (squeezing\t', 'LOGAN', 'BOX (rapt by his', 'LOGAN (only interested']
+42:	INT. - ICE ROOM:	['IN THE WALL', 'LOGAN (stupefied) ', 'BOX', 'LOGAN', 'BOX', 'LOGAN\t', 'BOX (calmly)', 'BOX (advancing)', 'BOX (chilling tone) ', 'BOX (looking up; ', 'BOX (still screaming)\t']
+43:	EXT. - HIGH LEDGE:	['JESSICA \t\t', 'LOGAN', 'JESSICA (frightened) ', 'LOGAN ', 'JESSICA (smiling) ', 'LOGAN']
+44:	INT. - CAVE - CLOSE ON FRANCIS:	None
+45:	EXT . - FOREST AREA:	['LOGAN (holding her; ', 'JESSICA', 'LOGAN', 'LOGAN', 'JESSICA', 'LOGAN ', 'JESSICA ', 'JESSICA', 'LOGAN', 'JESSICA', 'LOGAN', 'LOGAN', 'JESSICA', 'JESSICA (trying to ', 'LOGAN (grunts) ', 'LOGAN', 'JESSICA (yawning;\t\t']
+46:	EXT. - BARREN TERRAIN - NIGHT - FRANCIS:	None
+47:	EXT. - FOREST AREA - DAY - LOGAN AND JESSICA:	None
+48:	EXT. - FOREST AREA - FRANCIS:	None
+49:	EXT. - FOREST AREA - LOGAN AND JESSICA:	['JESSICA', 'JESSICA (quietly)', 'LOGAN (trying to', 'JESSICA (with laughter)', 'LOGAN (straight)', 'JESSICA. (a beat)', 'LOGAN', 'JESSICA']
+50:	INTING):	None
+51:	EXT. - MEMORIAL - LOGAN AND JESSICA - (MATTE COMPOSITE):	None
+52:	EXT. - MEMORIAL STEPS - HIGH REVERSE ANGLE - :	None
+53:	INT. - LINCOLN MEMORIAL (MATTE COMPOSITE)	:	None
+54:	INTING) :	['LOGAN ', 'JESSICA (beat) ']
+55:	INT. - MEMORIAL - HIGH ANGLE OVER STATUE'S BACK:	['LOGAN', 'JESSICA', 'JESSICA']
+56:	INT. - CAPITOL ROTUNDA - LONG SHOT - (MATTE COMPOSITE):	None
+57:	INT. - CORRIDOR OUTSIDE SENATE:	None
+58:	INT. - SENATE CHAMBER:	None
+59:	INTO CAMERA:	None
+60:	INT. - SENATE - OVER LOGAN AND JESSICA'S BACK - A WHITE:	['JESSICA (frowning; ', 'LOGAN (still stunned)', 'LOGAN', 'MAN', 'LOGAN ', 'MAN\t\t', 'JESSICA', 'MAN ', 'JESSICA ', 'MAN', 'JESSICA ', 'MAN', 'MAN', 'LOGAN', 'OLD MAN', 'JESSICA', 'OLD MAN', 'DIFFERENT NAMES."', 'OLD MAN (reciting)', 'LOGAN', 'OLD MAN', 'LOGAN', 'OLD MAN', 'LOGAN', 'OLD MAN', 'LOGAN\t\t\t', 'OLD MAN', 'LOGAN ', 'OLD MAN ', 'LOGAN ', 'OLD MAN ', 'LOGAN (astonished) ', 'JESSICA ', 'OLD MAN', 'JESSICA ', 'OLD MAN ', 'LOGAN ', 'OLD MAN', 'JESSICA (not knowing', 'OLD MAN (pleased; ', 'OLD MAN', 'OLD MAN', 'LOGAN', 'OLD MAN (offended)', 'LOGAN\t', 'JESSICA (simply; ', 'JESSICA', 'OLD MAN', 'JESSICA', 'OLD MAN', 'JESSICA', 'OLD MAN ', 'LOGAN', 'OLD MAN', 'LOGAN', 'OLD MAN', 'LOGAN\t', 'OLD MAN', 'JESSICA', 'OLD MAN', 'JESSICA', 'OLD MAN', 'OLD MAN', 'JESSICA (quietly)', 'LOGAN', 'JESSICA\t', 'LOGAN', 'JESSICA (after a beat) ', 'LOGAN ', 'JESSICA ', 'LOGAN', 'JESSICA (interrupting; ', 'LOGAN (gently) ', 'JESSICA (becoming\t', 'OLD MAN\t', 'OLD MAN (gesturing) ', 'LOGAN ']
+61:	INT - SENATE CHAMBER - CLOSE ON - JESSICA	:	['FRANCIS ', 'FRANCIS\t', 'JESSICA (screaming) ']
+62:	INT. - SENATE CHAMBER:	["FRANCIS' VOICE ", 'OLD MAN (cheerfully) ', 'FRANCIS (emotional; ', 'LOGAN ', 'FRANCIS ', 'LOGAN', 'FRANCIS (interrupting; ']
+63:	INTERCUT WITH: JESSICA AND THE MAN REACTING:	['FRANCIS (delirious)\t', 'FRANCIS ', 'OLD MAN', 'OLD MAN', 'JESSICA', 'OLD MAN', 'OLD MAN', 'JESSICA (softly)', 'OLD MAN', 'LOGAN', 'OLD MAN']
+64:	EXT. - HIGH ANGLE - CEMETERY - NIGHT - SHOOTING DOWN :	["OLD MAN'S VOICE "]
+65:	INT. - SENATE - NEXT MORNING:	['OLD MAN', 'JESSICA ', 'LOGAN ', 'JESSICA ', 'LOGAN (beat)', 'JESSICA ', 'LOGAN\t\t', 'JESSICA (interrupting) ', 'LOGAN ', 'JESSICA ', 'JESSICA', 'LOGAN (softly) ', 'JESSICA', 'LOGAN ', 'LOGAN ', 'OLD MAN\t\t', 'JESSICA ', 'OLD MAN ', 'LOGAN ', 'OLD MAN ', 'OLD MAN ', 'LOGAN ', 'OLD MAN ', 'OLD MAN', 'OLD MAN (mumbling) ']
+66:	EXT. - FOREST AREA - AFTERNOON:	['OLD MAN (weary but', 'LOGAN']
+67:	INTERCUT):	None
+68:	EXT. - WOODED AREA - NIGHT:	['OLD MAN ', 'LOGAN\t\t', 'OLD MAN', 'LOGAN ', 'OLD MAN ', 'JESSICA (reading; ', 'LOGAN (facing Jessica) ', 'JESSICA\t\t', 'LOGAN ', 'JESSICA (whispering)', 'LOGAN (kissing her)']
+69:	EXT. - DAY - GREENBELT AREA - LOGAN, JESSICA AND:	['THE OLD MAN']
+70:	EXT. - WOODED AREA - NIGHT - LOGAN, JESSICA AND THE OLD MAN:	['JESSICA', 'LOGAN', 'JESSICA', 'LOGAN', 'LOGAN (softly)\t', 'OLD MAN (sadly)', 'LOGAN', 'OLD MAN', 'LOGAN', 'OLD MAN', 'OLD MAN']
+71:	INT. - POWER CENTER OF THE CITY - LOGAN AND JESSICA :	["LOGAN'S VOICE", 'LOGAN ', 'LOGAN (holding up']
+72:	INT. - SANDMAN DEBRIEFING AREA:	['PROBABILITY\t']
+73:	INTERCUT WITH CLOSER SHOTS OF LOGAN HIMSELF WRITHING IN:	None
+74:	INT. SANDMAN H.Q. LOBBY:	None
+75:	EXT. SANDMAN H.Q.:	None
+76:	INT. LIFECLOCK ROOM:	None
+77:	EXT. SANDMAN H.Q.:	None
+78:	EXT. The City under the dome -- fitfully lit as the dome itself:	None
+79:	EXT. - DOMED CITY - FIRE FX AND CRACKING :	None
+80:	INTERCUT with above::	None
+81:	EXT. - CITY - FULL SHOT:	None
+82:	INTO THE SHOT.:	None
