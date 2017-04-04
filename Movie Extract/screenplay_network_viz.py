@@ -58,50 +58,78 @@ def networkObjects_to_edges(networkObjects_list):
 # Results can be found in "graph_info" directory.
 def graph_info(g):
     result = {}
-    components = list(nx.connected_component_subgraphs(g))
-    degrees = nx.degree(g)
-    highest_degree_node = sorted(degrees, key = lambda x: degrees[x], reverse = True)[0]
-    result['highest degree node'] = highest_degree_node
+    components = list(nx.strongly_connected_component_subgraphs(g))
+    in_degrees = g.in_degree()
+    out_degrees = g.out_degree()
+    highest_in_degree_node = sorted(in_degrees, key = lambda x: in_degrees[x], reverse = True)[0]
+    highest_out_degree_node = sorted(out_degrees, key = lambda x: out_degrees[x], reverse = True)[0]
+
+    result['highest in_degree node'] = highest_in_degree_node
+    result['highest out_degree_node'] = highest_out_degree_node
+
     result['numnber of components'] = len(components)
     result['number of nodes'] = g.number_of_nodes()
     result['number of edges'] = g.number_of_edges()
-
-    result['degree centrality'] = sorted([(el,nx.degree_centrality(g)[el]) for el in nx.degree_centrality(g)], key = lambda x: x[1], reverse = True)
-    result['highest degree node degree centrality'] = nx.degree_centrality(g)[highest_degree_node]
-
+#Degree centrality
+    in_degree_centrality = nx.in_degree_centrality(g)
+    out_degree_centrality = nx.out_degree_centrality(g)
+    result['sorted in_degree centrality'] = sorted([(el,in_degree_centrality[el]) for el in g.nodes()], key = lambda x: x[1], reverse = True)
+    result['sorted out_degree centrality'] = sorted([(el,out_degree_centrality[el]) for el in g.nodes()], key = lambda x: x[1], reverse = True)
+    
     result['closeness_centrality'] = sorted([(el,nx.closeness_centrality(g)[el]) for el in nx.closeness_centrality(g)], key = lambda x: x[1], reverse = True)
-    result['highest degree node closeness'] = nx.closeness_centrality(g)[highest_degree_node]
+    result['highest in_degree node closeness'] = nx.closeness_centrality(g)[highest_in_degree_node]
+    result['highest out_degree node closeness'] = nx.closeness_centrality(g)[highest_out_degree_node]
+
 
     result['betweenness centrality'] = sorted([(el,nx.betweenness_centrality(g)[el]) for el in nx.betweenness_centrality(g)], key = lambda x: x[1], reverse = True)
-    result['highest degree node betweenness'] = nx.betweenness_centrality(g)[highest_degree_node]
+    result['highest in_degree node betweenness'] = nx.betweenness_centrality(g)[highest_in_degree_node]
+    result['highest in_degree node betweenness'] = nx.betweenness_centrality(g)[highest_out_degree_node]
+
 
     largest_component = sorted (components, key = lambda x: x.number_of_nodes(), reverse = True)[0]
-    result['largest component percent'] = largest_component.number_of_nodes()/float(g.number_of_nodes())
-    result['largest component diameter'] = nx.diameter(largest_component)
-    result['largest component average path length'] = nx.average_shortest_path_length(largest_component)
-    result['average_degree'] = sum(degrees.values())/float(g.number_of_nodes())
-    result['avg_cluster_coefficient'] = nx.average_clustering(g)
+
+    result['largest strongly component percent'] = largest_component.number_of_nodes()/float(g.number_of_nodes())
+    result['largest strongly component diameter'] = nx.diameter(largest_component)
+    result['largest strongly component average path length'] = nx.average_shortest_path_length(largest_component)
+    result['average_degree (undireceted)'] = sum(g.degree().values())/float(g.number_of_nodes())
+    result['avg_cluster_coefficient (transitivity)'] = nx.transitivity(g)
     return result
 
 def create_network_viz(edge_list, file_name):
-    g = nx.Graph()
+    g = nx.DiGraph()
     for edge in edge_list:
-        g.add_edge(edge[0][0],edge[0][1])
-    result = graph_info(g)
-    f = open('graph_info/'+file_name+'.tsv','w')
-    for el in result:
-        f.write(el + ':\t' + json.dumps(result[el]) + '\n')
+        g.add_edges_from([(edge[0][0],edge[0][1])])
     pos1=nx.spring_layout(g)
     nx.draw_spring(g, with_labels=True, node_size=1, font_size=6, font_color='blue')
     plt.savefig(str(file_name) + "_netviz.png")
     plt.clf()
-    f.close()
-    return 0
-
+    return g
+def write_file(f, fname, title, result):
+    f.write(fname+'\t')
+    for attr in title:
+        f.write(json.dumps(result[attr])+'\t')
+    f.write('\n')
 
 if __name__ == "__main__":
+    init_flag = True
     for FILE in FILE_LIST:
         filename = FILE.split('/')[1].split('.')[0]
         networkObjects_list = sluglines_to_networkObjects(FILE)
         node_pairs = networkObjects_to_edges(networkObjects_list)
-        create_network_viz(node_pairs, filename)
+        g = create_network_viz(node_pairs, filename)
+        result = graph_info(g)
+        if init_flag == True:
+            title = sorted(result.keys())
+            f = open("graph_info_all.tsv","w")
+            f.write("Movie Name\t")
+            for attr in title:
+                f.write(attr + "\t")
+            f.write("\n")
+            init_flag = False
+        write_file(f,filename,title,result)
+
+
+      
+
+
+
