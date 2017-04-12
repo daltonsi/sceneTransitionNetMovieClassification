@@ -2,17 +2,16 @@ import ast
 import networkx as nx
 import matplotlib.pyplot as plt
 import json
-
+import glob
 #SLUG LINE FILES
-STAR_WARS = "output/star_wars_results.txt"
-AUSTIN_POWERS = "output/austinpowers_results.txt"
-BATMAN = "output/batman_results.txt"
-BLADE_RUNNER = "output/blade_runner_results.txt"
-EMPIRE_STRIKES_BACK = "output/empire_strikes_back_results.txt"
-JERRY_MCQUIRE = "output/jerry_maguire_results.txt"
-BEST_FRIENDS_WEDDING = "output/mybestfriendswedding_results.txt"
-TITANIC = "output/titanic_results.txt"
-FILE_LIST = [STAR_WARS, AUSTIN_POWERS, BATMAN, BLADE_RUNNER, EMPIRE_STRIKES_BACK, JERRY_MCQUIRE, BEST_FRIENDS_WEDDING, TITANIC]
+
+# These four movies cannot be processed correctly.
+# m1 = "./output/bourneidentity_results.txt"
+# m2 = "./output/jp3_results.txt"
+# m4 = "./output/miamivice_results.txt"
+# m6 = "./output/The-Iron-Giant_results.txt"
+
+FILE_LIST = glob.glob("./output/*.txt")
 
 # CONVERTS each SLUG LINE from processed screenplay to yield a scene node object represented as:
 # [SCENE_NUMBER(int), SCENE_LOCATION(str), SCENE_CHARACTERS(list)]
@@ -27,7 +26,10 @@ def sluglines_to_networkObjects(textfile):
     for line in file_object.readlines():
         line = line.replace(":","")
         line = line.split('\t')
-        line[2] = ast.literal_eval(line[2])
+        try:
+            line[2] = ast.literal_eval(line[2])
+        except:
+            pass
         line[0] = int(line[0])
         if ' -- ' in line[1]:
             line[1] = line[1].split(' -- ')[0]
@@ -53,7 +55,7 @@ def networkObjects_to_edges(networkObjects_list):
         node_object = [key,[scene_numbers,characters]]
         node_pairs.append(node_object)
     return node_pairs
-    
+
 # Function to calculate graph parameters
 # Results can be found in "graph_info" directory.
 def graph_info(g):
@@ -97,10 +99,16 @@ def graph_info(g):
 
 def create_network_viz(edge_list, file_name):
     g = nx.DiGraph()
+    added_edge = []
     for edge in edge_list:
-        g.add_edges_from([(edge[0][0],edge[0][1])])
+        if (edge[0][0],edge[0][1])not in added_edge:
+            g.add_edge(edge[0][0],edge[0][1],weight = 1)
+            added_edge.append((edge[0][0],edge[0][1]))
+        else:
+            g[edge[0][0]][edge[0][1]]['weight'] += 1
+    weights = [g[u][v]['weight']/10.0 for u,v in g.edges()]
     pos1=nx.spring_layout(g)
-    nx.draw_spring(g, with_labels=True, node_size=1, font_size=6, font_color='blue')
+    nx.draw_spring(g, with_labels=True, node_size=1, font_size=6, font_color='blue',width = weights)
     plt.savefig(str(file_name) + "_netviz.png")
     plt.clf()
     return g
@@ -113,20 +121,25 @@ def write_file(f, fname, title, result):
 if __name__ == "__main__":
     init_flag = True
     for FILE in FILE_LIST:
-        filename = FILE.split('/')[1].split('.')[0]
-        networkObjects_list = sluglines_to_networkObjects(FILE)
-        node_pairs = networkObjects_to_edges(networkObjects_list)
-        g = create_network_viz(node_pairs, filename)
-        result = graph_info(g)
-        if init_flag == True:
-            title = sorted(result.keys())
-            f = open("graph_info_all.tsv","w")
-            f.write("Movie Name\t")
-            for attr in title:
-                f.write(attr + "\t")
-            f.write("\n")
-            init_flag = False
-        write_file(f,filename,title,result)
+        try:
+            filename = FILE.split('/')[2].split('.')[0]
+            networkObjects_list = sluglines_to_networkObjects(FILE)
+            node_pairs = networkObjects_to_edges(networkObjects_list)
+            g = create_network_viz(node_pairs, filename)
+            result = graph_info(g)
+            if init_flag == True:
+                title = sorted(result.keys())
+                f = open("graph_info_all.tsv","a")
+                f.write("Movie Name\t")
+                for attr in title:
+                    f.write(attr + "\t")
+                f.write("\n")
+                init_flag = False
+            write_file(f,filename,title,result)
+        except:
+            print FILE
+            continue
+    
 
 
       
