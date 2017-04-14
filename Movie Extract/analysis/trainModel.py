@@ -83,7 +83,6 @@ def svm_predict(model, test_df):
         for sublist in X:
             new_list.append(float(sublist[i]))
         X_final.append(new_list)
-    print X_final[0]
 
     results = model.predict(np.array(X_final))
 
@@ -97,5 +96,5 @@ if __name__ == "__main__":
     svm = train_svm_model(train_df)
 
     results = svm_predict(svm, test_df)
-    print results
-    print test_df[1].tolist()
+    print "Predicted Results: " + str(results)
+    print "Actual Labels: " + str(test_df.iloc[:,-1].tolist())
