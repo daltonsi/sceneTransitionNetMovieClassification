@@ -52,6 +52,9 @@ def create_train_test():
     return train_df.reset_index(), test_df.reset_index()
 
 def train_svm_model(training_df):
+    '''TRAINS AN SVM MODEL TO PREDICT ACTION MOVIE CLASSIFICATION'''
+
+    # Initatie Input Vector
     X = []
     for column in training_df:
         X.append(training_df[column].tolist())
@@ -59,24 +62,30 @@ def train_svm_model(training_df):
     y = X[length-1:][0]
     X = X[:length-1]
 
+    # Reorientate input vector in proper model dimensions
     X_final = []
     for i in range(0,len(X[0])):
         new_list = []
         for sublist in X:
             new_list.append(float(sublist[i]))
         X_final.append(new_list)
+
+    # Generate and train the model
     clf = SVC()
     clf.fit(np.array(X_final), np.array(y))
     return clf
 
 def svm_predict(model, test_df):
+    '''PREDICTS ACTION MOVIE CLASSIFICATION BASED ON NETWORK ANALYSIS METRICS'''
+
+    # Intiate Input Vector
     X = []
     for column in test_df:
         X.append(test_df[column].tolist())
     length = len(X)
-    y = X[length-1:][0]
     X = X[:length-1]
 
+    # Reorientate input vector in proper model dimensions
     X_final = []
     for i in range(0,len(X[0])):
         new_list = []
@@ -84,6 +93,7 @@ def svm_predict(model, test_df):
             new_list.append(float(sublist[i]))
         X_final.append(new_list)
 
+    # Predict Classification label using model
     results = model.predict(np.array(X_final))
 
     return results
