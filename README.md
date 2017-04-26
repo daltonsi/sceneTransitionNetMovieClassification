@@ -15,9 +15,10 @@ Inspired by MovieGalaxies approach of generating social graphs of character inte
  
 We hypothesize that movies designated with a particular genre (e.g. Action) will have distinct properties in their scene transition network (centrality measures, # nodes, # Edges, etc.) that can be identified and then used as features to create a machine learning model for classifying movies for a specific genre using the inherent properties of its scene transition network.
 For this project, we will generate scene transition network metrics for training data in which each data element (a movie) is classified as either an action movie or a non-action movie. We can use the resulting data to train a supervised machine learning model for classifying action movies based on the properties of a movie’s scene-transition network.
+
 ## DATA AND METHODS
 To extract slugline data from movie screenplays for generating scene-transition networks, we developed text file and html parsers. These parsers tag and extract all of the scene ‘slugs lines.’ Slug lines are all-caps headings in a screenplay that introduce a new scene and usually contain three pieces of information: whether the scene occurs inside or outside (INT/EXT), the location of the scene (TATOOINE) and some temporal information (DAY).
-FIgure 1. A sample slug line (IN ALL CAPS) from Star Wars: A New Hope
+![alt text](https://github.com/daltonsi/sceneTransitionNetMovieClassification/blob/master/Movie%20Extract/Images/608_fig1.png?raw=true)
 The resulting output of the parser is a list of slug lines from a movie screenplay. Each slug line effectively serves as network node with edges between adjacent slug lines in the master list. In summary, a list of slug lines can be used to generate a list of node pairs, providing the requisite data for generating a scene transition network.
  
 
