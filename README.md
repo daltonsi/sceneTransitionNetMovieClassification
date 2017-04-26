@@ -22,36 +22,10 @@ To extract slugline data from movie screenplays for generating scene-transition 
 The resulting output of the parser is a list of slug lines from a movie screenplay. Each slug line effectively serves as network node with edges between adjacent slug lines in the master list. In summary, a list of slug lines can be used to generate a list of node pairs, providing the requisite data for generating a scene transition network.
  
 
-FIgure 2. A directed scene transition network of Star Wars: A New Hope
+![alt text](https://github.com/daltonsi/sceneTransitionNetMovieClassification/blob/master/Movie%20Extract/Images/608_fig2.png?raw=true)
 With scene-transition graphs we generated network metrics that can be used as features in training a supervised machine learning model.
-                                    average_degree
-avg_cluster_coe
-highest in_degree node betweenness
-highest in_degree node closeness
-highest out_degree node closeness
-largest strongly component average path length
-   (undirected)
-fficient (transitivity)
-                             7.2923076923076
-92
-0.2798816568047 337
-0.1538379451212 65
-0.4740740740740 74
-0.4444444444444 44
-3.1353365384615 3
-                                   largest strongly component diameter
-largest strongly component percent
-number of edges
-number of nodes
-number of components
-Action?
-                             7
-1
-237
-65
-1
-1
-                 FIgure 3. Scene transition network metrics of Star Wars: A New Hope, Classification Variable
+
+![alt text](https://github.com/daltonsi/sceneTransitionNetMovieClassification/blob/master/Movie%20Extract/Images/608_fig3.png?raw=true)
 According to our hypothesis, the network metrics will show a distinctiveness for action movies in relation to other genres of movies. Action movies, for example, often contain fast, chase sequences. In such film sequences, there can be rapid, several second shots between multiple locations(e.g. From inside a spacecraft to back at a command center to inside the lair of the
 villain, etc.) Action sequences therefore would generate a higher number of nodes (more locations) and a higher number of edges(more rapid transitions) than a film where a scene spans minutes rather than seconds (e.g. A wedding in a romantic comedy). Furthermore, the rapid scene movement in an action sequence may generate greater clustering of scene transitions than a more linear, evenly-paced sequence.
 Using our text and html parsers, we extracted slug lines from 50 different movies - 24 action and 26 non-action. Each of slug lines lists from these movies was transformed into a scene- transition network. An analysis script conducted the following metrics for each scene-transition network: average degree, average clustering coefficient, highest in-degree node betweenness, highest in-degree node closeness, highest out-degree node closeness, largest average path length of largest strongly connected component, diameter of largest largely connected component, largest strongly connected component percent, number of edges, number of nodes and number of components.
@@ -59,23 +33,20 @@ The final metrics collected for each scene transition network then serve as feat
 
 ## RESULTS
 According to the features of action movies with fast cuts, many locations, lower time per scene and parallel events, we are expected to see more nodes, edges and clusters in action movies. At the same time, due to high amount of scene transitions, the average degree of each node should be higher than other genres. Let’s have a look at some movie network visualizations of different genres. In Figure 4, we listed three directed and weighted scene transition network of 3 action movies: Batman, Air Force One and Spiderman. In Figure 5, we listed three other networks of other genres: My Best Friend’s Weddings, Heathers and Halloween.
-FIgure 4. Directed and weighted scene transition network of action movies
+![alt text](https://github.com/daltonsi/sceneTransitionNetMovieClassification/blob/master/Movie%20Extract/Images/608_fig4.png?raw=true)
    
-
-FIgure 5. Directed and weighted scene transition network of non-action movies
+![alt text](https://github.com/daltonsi/sceneTransitionNetMovieClassification/blob/master/Movie%20Extract/Images/608_fig5.png?raw=true)
 From the network visualizations above, in action movies network, the number of nodes and edges are higher than other non-action movies and the cluster in action movie network is easier to be identified. That means we can easily recognize one or more scenes with a fairly high degree in the network. Also, in each action movie, there are usually several edges with high weights than others implying a high frequency of transitions between two specific scenes.
 To obtain an overview of our findings in the whole dataset, we drew two bar charts in Figure 6 and 7 to see top 15 movies with highest nodes and edges. The figures show that most movies with large number of nodes and edges are action movies which can be a proof to our intuition mentioned earlier.
-    FIgure 6. Top 15 movies with highest number of nodes
+![alt text](https://github.com/daltonsi/sceneTransitionNetMovieClassification/blob/master/Movie%20Extract/Images/608_fig6.png?raw=true)
 
- FIgure 7. Top 15 movies with highest number of edges
+![alt text](https://github.com/daltonsi/sceneTransitionNetMovieClassification/blob/master/Movie%20Extract/Images/608_fig7.png?raw=true)
 When applying the model to the training data, we encountered an issue of predicting only “non- action” movies. After applying the SVM model, modifying multiple parameters and applying cross-validation to test different observations in the training data, our model consistently predicted “non-action” results. Due to this, we are faced with inconclusive results that could be attributed to a number of different factors. These factors are discussed further in “Limitations/Challenges”.
 ## LIMITATIONS/CHALLENGES
 Over the course of the semester, our team faced a number of issues when creating our classification model. Below are a few highlighting the major struggles that we encountered.
 ### Difficulty of designing a screenplay parser
 When collecting the screenplay data, we focused on available screenplays in the format of .txt files. We were able to successfully collect and parse eight scripts through our python script, but hit a wall when we could not find more screenplays in that format. Our python script was only programmed to handle the regex and format of .txt files and we had to find another way to get more screenplays. In order to do this, we decided to tackle any screenplays that were available in an html format. Creating a web scraper and parser, we were able to program a parser that extracted the slugline data and create output files similar to output files created by the .txt files.
-Alex Czarnik, Dalton Simancek, Ruihan Wang, Chengyi Xu SI 608 Networks
-Course Project
-18 April 2017
+
 ### Working around the inconsistencies of screenplays
 Although we overcame the difficulty of parsing files of a different format, there was another issue with the screenplay files we were parsing. Due to the way different studios and writers created their scripts, not all followed the standard slugline format. There were some movie scripts that indented their lines differently, different placement for characters and different wording to describe actor lines. With a persistent tweaking of the program, we were able to parse out almost all of these flaws to create a standard output from different inputs.
 ### The inconsistencies of using genres as classification labels
